@@ -29,8 +29,16 @@ export default function Resume() {
             >
               <div className="flex flex-col md:flex-row md:items-center gap-6">
                 {/* Company Logo */}
-                <div className="w-16 h-16 bg-[#334155] rounded-xl flex items-center justify-center text-2xl font-bold text-gray-400 group-hover:text-[#3b82f6] transition-colors flex-shrink-0">
-                  {exp.logoText}
+                <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center overflow-hidden flex-shrink-0">
+                  {exp.logo ? (
+                    <img
+                      src={exp.logo}
+                      alt={`${exp.company} logo`}
+                      className="w-12 h-12 object-contain"
+                    />
+                  ) : (
+                    <span className="text-2xl font-bold text-gray-400">{exp.logoText}</span>
+                  )}
                 </div>
 
                 <div className="flex-1">

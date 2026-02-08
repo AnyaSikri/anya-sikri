@@ -6,6 +6,7 @@ export const experiences = [
   {
     company: "Rigel Pharmaceuticals",
     logoText: "RP",
+    logo: "https://logo.clearbit.com/rigel.com",
     role: "AI Engineer",
     dates: "Aug 2025 - Present",
     achievement: "Built AI-powered Patient Safety Narrative System that cut medical writer workload from 2-4 hours to 15-30 minutes, automating clinical data extraction and report generation",
@@ -14,6 +15,7 @@ export const experiences = [
   {
     company: "Health Engine",
     logoText: "HE",
+    logo: "/images/logos/health-engine.png",
     role: "Analyst",
     dates: "Dec 2024 - Present",
     achievement: "Building semantic search engine using vector embeddings and FAISS to match health-tech startups with investors, while evaluating 60+ cohort startups for product-market fit",
@@ -22,6 +24,7 @@ export const experiences = [
   {
     company: "PwC",
     logoText: "PwC",
+    logo: "https://logo.clearbit.com/pwc.com",
     role: "Cloud Engineering & Data Intern",
     dates: "Summer 2025",
     achievement: "Designed LLM Evaluation Framework and vendor intelligence system that reduced model selection time by 60%, enabling transparent AI adoption decisions for insurance clients",
@@ -30,6 +33,7 @@ export const experiences = [
   {
     company: "Ishara Investments",
     logoText: "II",
+    logo: "/images/logos/ishara.png",
     role: "Tech Research Analyst Intern",
     dates: "Aug - Dec 2025",
     achievement: "Analyzed 20+ public biotech equities, building financial models to identify drug cycle inflection points and synthesizing FDA filings into actionable investment memos",
@@ -38,6 +42,7 @@ export const experiences = [
   {
     company: "Abbott",
     logoText: "ABT",
+    logo: "https://logo.clearbit.com/abbott.com",
     role: "Data Science & Strategy Intern",
     dates: "Aug - Dec 2024",
     achievement: "Led due diligence on 8 pharma acquisition targets, building valuation frameworks and presenting scorecards that synthesized clinical, financial, and competitive data",
@@ -46,6 +51,7 @@ export const experiences = [
   {
     company: "Stanford Clinical Research (SCCR)",
     logoText: "SU",
+    logo: "https://logo.clearbit.com/stanford.edu",
     role: "Data Science Intern",
     dates: "Summer 2023",
     achievement: "Mapped competitive landscapes across 200+ pharmaceutical patents, identifying whitespace in therapeutic areas to inform AI-driven drug development strategy",
