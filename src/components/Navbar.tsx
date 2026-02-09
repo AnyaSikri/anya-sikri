@@ -15,9 +15,9 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0f172a]/80 backdrop-blur-md border-b border-[#334155]">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0f]/80 backdrop-blur-md border-b border-[#2a2a3c]">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold text-white hover:text-[#3b82f6] transition-colors">
+        <Link href="/" className="text-2xl font-bold text-white hover:text-[#6366f1] transition-colors">
           Anya Sikri
         </Link>
 
@@ -46,12 +46,12 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-[#1e293b] border-t border-[#334155]">
+        <div className="md:hidden bg-[#13131a] border-t border-[#2a2a3c]">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="block px-6 py-3 text-gray-300 hover:text-white hover:bg-[#334155] transition-colors"
+              className="block px-6 py-3 text-gray-300 hover:text-white hover:bg-[#2a2a3c] transition-colors"
               onClick={() => setIsOpen(false)}
             >
               {link.label}

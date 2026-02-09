@@ -5,7 +5,7 @@ import { Mail, Linkedin, Github, Twitter } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 px-6 bg-[#1e293b]/50">
+    <section id="contact" className="py-24 px-6 bg-[#13131a]/50">
       <div className="max-w-4xl mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -34,7 +34,7 @@ export default function Contact() {
         >
           <a
             href="mailto:sikrianya@gmail.com"
-            className="w-14 h-14 bg-[#334155] rounded-full flex items-center justify-center text-gray-300 hover:bg-[#3b82f6] hover:text-white transition-all"
+            className="w-14 h-14 bg-[#2a2a3c] rounded-full flex items-center justify-center text-gray-300 hover:bg-[#6366f1] hover:text-white transition-all"
           >
             <Mail size={24} />
           </a>
@@ -42,7 +42,7 @@ export default function Contact() {
             href="https://linkedin.com/in/anyasikri"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-14 h-14 bg-[#334155] rounded-full flex items-center justify-center text-gray-300 hover:bg-[#3b82f6] hover:text-white transition-all"
+            className="w-14 h-14 bg-[#2a2a3c] rounded-full flex items-center justify-center text-gray-300 hover:bg-[#6366f1] hover:text-white transition-all"
           >
             <Linkedin size={24} />
           </a>
@@ -50,7 +50,7 @@ export default function Contact() {
             href="https://github.com/anyasikri"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-14 h-14 bg-[#334155] rounded-full flex items-center justify-center text-gray-300 hover:bg-[#3b82f6] hover:text-white transition-all"
+            className="w-14 h-14 bg-[#2a2a3c] rounded-full flex items-center justify-center text-gray-300 hover:bg-[#6366f1] hover:text-white transition-all"
           >
             <Github size={24} />
           </a>
@@ -58,7 +58,7 @@ export default function Contact() {
             href="https://twitter.com/anyasikri"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-14 h-14 bg-[#334155] rounded-full flex items-center justify-center text-gray-300 hover:bg-[#3b82f6] hover:text-white transition-all"
+            className="w-14 h-14 bg-[#2a2a3c] rounded-full flex items-center justify-center text-gray-300 hover:bg-[#6366f1] hover:text-white transition-all"
           >
             <Twitter size={24} />
           </a>

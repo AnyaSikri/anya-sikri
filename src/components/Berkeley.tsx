@@ -44,7 +44,7 @@ export default function Berkeley() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-[#1e293b] border border-[#334155] rounded-xl p-4 hover:border-[#FDB515]/50 transition-colors"
+                  className="bg-[#13131a] border border-[#2a2a3c] rounded-xl p-4 hover:border-[#FDB515]/50 transition-colors"
                 >
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-[#003262] rounded-lg flex items-center justify-center text-lg font-bold text-[#FDB515]">
@@ -79,7 +79,7 @@ export default function Berkeley() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-[#1e293b] border border-[#334155] rounded-xl p-5 hover:border-[#003262]/50 transition-colors"
+                  className="bg-[#13131a] border border-[#2a2a3c] rounded-xl p-5 hover:border-[#003262]/50 transition-colors"
                 >
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
                     <h4 className="font-semibold text-white">{item.name}</h4>
@@ -88,7 +88,7 @@ export default function Berkeley() {
                     )}
                   </div>
                   {item.role && (
-                    <p className="text-[#3b82f6] text-sm mb-2">{item.role}</p>
+                    <p className="text-[#6366f1] text-sm mb-2">{item.role}</p>
                   )}
                   <p className="text-gray-300 text-sm mb-3">{item.description}</p>
                   {item.tags && (
@@ -96,7 +96,7 @@ export default function Berkeley() {
                       {item.tags.map((tag: string, tagIndex: number) => (
                         <span
                           key={tagIndex}
-                          className="px-2 py-1 bg-[#334155] text-gray-300 rounded text-xs"
+                          className="px-2 py-1 bg-[#2a2a3c] text-gray-300 rounded text-xs"
                         >
                           {tag}
                         </span>

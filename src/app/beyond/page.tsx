@@ -7,9 +7,9 @@ import { hiking, writing, startupsToWatch } from "@/data/content";
 
 export default function BeyondPage() {
   return (
-    <main className="min-h-screen bg-[#0f172a]">
+    <main className="min-h-screen bg-[#0a0a0f]">
       {/* Header */}
-      <div className="bg-gradient-to-b from-[#1e293b] to-[#0f172a] py-12 px-6">
+      <div className="bg-gradient-to-b from-[#13131a] to-[#0a0a0f] py-12 px-6">
         <div className="max-w-5xl mx-auto">
           <Link
             href="/"
@@ -55,9 +55,9 @@ export default function BeyondPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-[#1e293b] rounded-2xl overflow-hidden group"
+                className="bg-[#13131a] rounded-2xl overflow-hidden group"
               >
-                <div className="h-48 bg-gradient-to-br from-[#22c55e]/20 to-[#0f172a] flex items-center justify-center">
+                <div className="h-48 bg-gradient-to-br from-[#22c55e]/20 to-[#0a0a0f] flex items-center justify-center">
                   <Mountain className="text-[#22c55e]/30" size={64} />
                 </div>
                 <div className="p-4">
@@ -93,7 +93,7 @@ export default function BeyondPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="block bg-[#1e293b] border border-[#334155] rounded-xl p-5 hover:border-[#f472b6]/50 transition-colors group"
+                className="block bg-[#13131a] border border-[#2a2a3c] rounded-xl p-5 hover:border-[#f472b6]/50 transition-colors group"
               >
                 <div className="flex items-start justify-between">
                   <div>
@@ -116,7 +116,7 @@ export default function BeyondPage() {
           viewport={{ once: true }}
         >
           <div className="flex items-center gap-3 mb-8">
-            <Rocket className="text-[#3b82f6]" size={28} />
+            <Rocket className="text-[#6366f1]" size={28} />
             <h2 className="text-3xl font-bold text-white">Startups to Watch</h2>
           </div>
           <p className="text-gray-400 mb-6">
@@ -133,9 +133,9 @@ export default function BeyondPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-[#1e293b] border border-[#334155] rounded-xl p-5 hover:border-[#3b82f6]/50 transition-all group hover:shadow-lg hover:shadow-[#3b82f6]/10"
+                className="bg-[#13131a] border border-[#2a2a3c] rounded-xl p-5 hover:border-[#6366f1]/50 transition-all group hover:shadow-lg hover:shadow-[#6366f1]/10"
               >
-                <h3 className="font-semibold text-white group-hover:text-[#3b82f6] transition-colors flex items-center gap-2">
+                <h3 className="font-semibold text-white group-hover:text-[#6366f1] transition-colors flex items-center gap-2">
                   {startup.name}
                   <ExternalLink size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
                 </h3>
@@ -150,7 +150,7 @@ export default function BeyondPage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center py-12 border-t border-[#334155]"
+          className="text-center py-12 border-t border-[#2a2a3c]"
         >
           <h2 className="text-2xl font-bold text-white mb-4">Want to chat?</h2>
           <p className="text-gray-400 mb-6">
@@ -158,7 +158,7 @@ export default function BeyondPage() {
           </p>
           <a
             href="mailto:sikrianya@gmail.com"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[#3b82f6] text-white rounded-full font-medium hover:bg-[#2563eb] transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#6366f1] text-white rounded-full font-medium hover:bg-[#2563eb] transition-colors"
           >
             Say Hello
           </a>
