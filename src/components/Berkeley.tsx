@@ -53,7 +53,7 @@ export default function Berkeley() {
                     <div>
                       {club.link ? (
                         <a href={club.link} target="_blank" rel="noopener noreferrer" className="font-semibold text-white hover:text-[#FDB515] transition-colors">
-                          {club.name} →
+                          {club.name}
                         </a>
                       ) : (
                         <h4 className="font-semibold text-white">{club.name}</h4>
@@ -90,7 +90,7 @@ export default function Berkeley() {
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
                     {item.link ? (
                       <a href={item.link} target="_blank" rel="noopener noreferrer" className="font-semibold text-white hover:text-[#6366f1] transition-colors">
-                        {item.name} →
+                        {item.name}
                       </a>
                     ) : (
                       <h4 className="font-semibold text-white">{item.name}</h4>

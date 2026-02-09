@@ -56,7 +56,7 @@ export default function Resume() {
                       rel="noopener noreferrer"
                       className="text-[#6366f1] font-medium mb-3 hover:underline inline-block"
                     >
-                      {exp.company} →
+                      {exp.company}
                     </a>
                   ) : (
                     <p className="text-[#6366f1] font-medium mb-3">{exp.company}</p>
