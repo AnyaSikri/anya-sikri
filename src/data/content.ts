@@ -141,7 +141,7 @@ export const research = [
     dates: "Aug 2022 - Jan 2023",
     description: "Analyzed 20 COVID-19 genetic datasets to identify disease variable correlations. Built ML model to forecast seizures in COVID-19 patients with 80% accuracy. Presented findings to neurologists and researchers.",
     tags: ["Python", "ML", "KNN Imputation", "Dimensionality Reduction"],
-    link: "https://profiles.ucsf.edu/parneet.singhal",
+    link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11875240/",
   },
   {
     name: "Single-Cell Lung vs. Trachea Analysis",
