@@ -98,22 +98,22 @@ export const ventures = [
 
 export const clubs = [
   {
-    name: "Berkeley Consulting Club",
-    logoText: "BC",
-    role: "Senior Consultant",
-    description: "Led pro-bono consulting projects for Bay Area startups and nonprofits",
+    name: "Phoenix Consulting",
+    logoText: "PC",
+    role: "Manager",
+    description: "Healthcare consulting for Bay Area health-tech companies and healthcare organizations",
+  },
+  {
+    name: "Health Engine",
+    logoText: "HE",
+    role: "Analyst",
+    description: "UC Berkeley's healthcare startup accelerator, supporting 60+ health-tech startups",
   },
   {
     name: "Data Science Society",
     logoText: "DS",
     role: "Project Lead",
     description: "Organized workshops and led a team of 8 on ML competition projects",
-  },
-  {
-    name: "Blockchain at Berkeley",
-    logoText: "BB",
-    role: "Member",
-    description: "Explored Web3 technologies and smart contract development",
   },
 ];
 
