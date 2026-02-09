@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Sora, JetBrains_Mono } from "next/font/google";
+import { Outfit, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const sora = Sora({
-  variable: "--font-sora",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
 });
 
@@ -26,8 +26,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sora.variable} ${jetbrainsMono.variable} antialiased font-sans`}
-        style={{ fontFamily: "var(--font-sora), system-ui, sans-serif" }}
+        className={`${outfit.variable} ${jetbrainsMono.variable} antialiased font-sans`}
+        style={{ fontFamily: "var(--font-outfit), system-ui, sans-serif" }}
       >
         {children}
       </body>
