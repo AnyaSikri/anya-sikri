@@ -28,9 +28,17 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl md:text-2xl text-gray-300 mb-8"
+          className="text-xl md:text-2xl text-gray-300 mb-4"
         >
           Building AI for Healthcare & Life Sciences
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="text-base md:text-lg text-gray-400 mb-8 max-w-2xl"
+        >
+          Data Science & Public Health student at UC Berkeley. Previously at PwC, Rigel Pharmaceuticals, and Abbott.
         </motion.p>
 
         <motion.div
