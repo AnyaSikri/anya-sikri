@@ -20,7 +20,7 @@ export const experiences = [
     link: "https://www.readysethealth.io/",
     role: "Analyst",
     dates: "Dec 2024 - Present",
-    achievement: "Building semantic search engine using vector embeddings and FAISS to match health-tech startups with investors, while evaluating 60+ cohort startups for product-market fit",
+    achievement: "UC Berkeley's healthcare startup accelerator. Building semantic search engine using vector embeddings and FAISS to match startups with investors, while evaluating 60+ cohort startups for product-market fit",
     tech: ["Python", "MongoDB", "FAISS", "SentenceTransformer"],
   },
   {
@@ -40,7 +40,7 @@ export const experiences = [
     link: "https://www.isharainvestments.com/",
     role: "Tech Research Analyst Intern",
     dates: "Aug - Dec 2025",
-    achievement: "Analyzed 20+ public biotech equities, building financial models to identify drug cycle inflection points and synthesizing FDA filings into actionable investment memos",
+    achievement: "Analyzed 20+ public biotech equities, built investment dashboard and financial models to identify drug cycle inflection points, synthesizing FDA filings into actionable investment memos",
     tech: ["Financial Modeling", "SQL", "Research"],
   },
   {
