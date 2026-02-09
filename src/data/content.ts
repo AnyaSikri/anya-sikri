@@ -73,6 +73,16 @@ export const technicalProjects = [
     github: "https://github.com/anyasikri/ai-news-scraper",
     featured: true,
   },
+  {
+    title: "Single-Cell Lung vs. Trachea Analysis",
+    description: "Analyzed 3,000+ cells from Tabula Muris scRNA-seq data using Smart-seq2. Applied KMeans, spectral clustering, and Phenograph on PCA-reduced features. Validated clusters via marker genes and generated UMAP embeddings.",
+    tags: ["scRNA-seq", "Clustering", "UMAP", "Seurat"],
+  },
+  {
+    title: "Influenza A Vaccine Target Evolution",
+    description: "Performed MSA and conservation scoring across HA, NA, PB1, PB2 proteins from 2018-2022 strains. Quantified selection pressure using dN/dS ratios and visualized mutation maps with JBrowse.",
+    tags: ["Bioinformatics", "MSA", "dN/dS Analysis", "JBrowse"],
+  },
 ];
 
 export const ventures = [
@@ -129,18 +139,6 @@ export const research = [
     description: "Analyzed 20 COVID-19 genetic datasets to identify disease variable correlations. Built ML model to forecast seizures in COVID-19 patients with 80% accuracy. Presented findings to neurologists and researchers.",
     tags: ["Python", "ML", "KNN Imputation", "Dimensionality Reduction"],
     link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11875240/",
-  },
-  {
-    name: "Single-Cell Lung vs. Trachea Analysis",
-    role: "BioE 149 Capstone",
-    description: "Analyzed 3,000+ cells from Tabula Muris scRNA-seq data using Smart-seq2. Applied KMeans, spectral clustering, and Phenograph on PCA-reduced features. Validated clusters via marker genes (Sftpc, Foxj1, Cd68) and generated UMAP embeddings.",
-    tags: ["scRNA-seq", "Clustering", "UMAP", "Seurat"],
-  },
-  {
-    name: "Influenza A Vaccine Target Evolution",
-    role: "Virology Capstone",
-    description: "Performed MSA and conservation scoring across HA, NA, PB1, PB2 proteins from 2018-2022 strains. Quantified selection pressure using dN/dS ratios, observed high antigenic drift in surface-exposed residues. Used JBrowse for mutation visualization.",
-    tags: ["Bioinformatics", "MSA", "dN/dS Analysis", "JBrowse"],
   },
 ];
 
