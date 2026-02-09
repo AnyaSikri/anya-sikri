@@ -6,7 +6,7 @@ export const experiences = [
   {
     company: "Rigel Pharmaceuticals",
     logoText: "Rigel",
-    logoColor: "#1e40af",
+    logo: "/images/logos/rigel.png",
     role: "AI Engineer",
     dates: "Aug 2025 - Present",
     achievement: "Built AI-powered Patient Safety Narrative System that cut medical writer workload from 2-4 hours to 15-30 minutes, automating clinical data extraction and report generation",
@@ -15,7 +15,7 @@ export const experiences = [
   {
     company: "Health Engine",
     logoText: "HE",
-    logoColor: "#059669",
+    logo: "/images/logos/health_engine.jpeg",
     role: "Analyst",
     dates: "Dec 2024 - Present",
     achievement: "Building semantic search engine using vector embeddings and FAISS to match health-tech startups with investors, while evaluating 60+ cohort startups for product-market fit",
@@ -24,7 +24,7 @@ export const experiences = [
   {
     company: "PwC",
     logoText: "PwC",
-    logoColor: "#dc6803",
+    logo: "/images/logos/pwc.jpg",
     role: "Cloud Engineering & Data Intern",
     dates: "Summer 2025",
     achievement: "Designed LLM Evaluation Framework and vendor intelligence system that reduced model selection time by 60%, enabling transparent AI adoption decisions for insurance clients",
@@ -42,7 +42,7 @@ export const experiences = [
   {
     company: "Abbott",
     logoText: "Abbott",
-    logoColor: "#0369a1",
+    logo: "/images/logos/abbott.jpg",
     role: "Data Science & Strategy Intern",
     dates: "Aug - Dec 2024",
     achievement: "Led due diligence on 8 pharma acquisition targets, building valuation frameworks and presenting scorecards that synthesized clinical, financial, and competitive data",
@@ -51,7 +51,7 @@ export const experiences = [
   {
     company: "Stanford Clinical Research (SCCR)",
     logoText: "SCCR",
-    logoColor: "#8c1515",
+    logo: "/images/logos/stanford.jpeg",
     role: "Data Science Intern",
     dates: "Summer 2023",
     achievement: "Mapped competitive landscapes across 200+ pharmaceutical patents, identifying whitespace in therapeutic areas to inform AI-driven drug development strategy",
