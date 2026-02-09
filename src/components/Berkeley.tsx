@@ -79,22 +79,29 @@ export default function Berkeley() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-[#1e293b] border border-[#334155] rounded-xl p-4 hover:border-[#003262]/50 transition-colors"
+                  className="bg-[#1e293b] border border-[#334155] rounded-xl p-5 hover:border-[#003262]/50 transition-colors"
                 >
-                  <h4 className="font-semibold text-white">{item.name}</h4>
-                  {item.advisor && (
-                    <p className="text-gray-400 text-sm">Advisor: {item.advisor}</p>
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
+                    <h4 className="font-semibold text-white">{item.name}</h4>
+                    {item.dates && (
+                      <span className="text-gray-500 text-xs">{item.dates}</span>
+                    )}
+                  </div>
+                  {item.role && (
+                    <p className="text-[#3b82f6] text-sm mb-2">{item.role}</p>
                   )}
-                  <p className="text-gray-300 text-sm mt-2">{item.description}</p>
-                  {item.link && (
-                    <a
-                      href={item.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#3b82f6] text-sm mt-2 inline-block hover:underline"
-                    >
-                      View Paper →
-                    </a>
+                  <p className="text-gray-300 text-sm mb-3">{item.description}</p>
+                  {item.tags && (
+                    <div className="flex flex-wrap gap-2">
+                      {item.tags.map((tag: string, tagIndex: number) => (
+                        <span
+                          key={tagIndex}
+                          className="px-2 py-1 bg-[#334155] text-gray-300 rounded text-xs"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
                   )}
                 </motion.div>
               ))}

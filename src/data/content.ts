@@ -119,19 +119,30 @@ export const clubs = [
 
 export const research = [
   {
-    name: "Machine Learning Research Lab",
-    advisor: "Prof. Example Name",
-    description: "Researching efficient fine-tuning methods for large language models",
-    link: "https://arxiv.org/example",
+    name: "Innovative Genomics Institute",
+    role: "Quantitative Biology Intern",
+    dates: "July 2025 - Present",
+    description: "Cancer drug screening research using patient-derived organoid models. Built data processing pipelines for fluorescence analysis, developed automated cell-sorting tools, and applied clustering/dimensionality reduction to identify treatment effects on cell behavior.",
+    tags: ["Python", "FlowJo", "scRNA-seq", "Clustering"],
   },
   {
-    name: "CS 189: Machine Learning",
-    description: "Explored statistical learning theory, SVMs, neural networks, and ensemble methods",
+    name: "UCSF Singhal Laboratory",
+    role: "Data Science Research Intern",
+    dates: "Aug 2022 - Jan 2023",
+    description: "Analyzed 20 COVID-19 genetic datasets to identify disease variable correlations. Built ML model to forecast seizures in COVID-19 patients with 80% accuracy. Presented findings to neurologists and researchers.",
+    tags: ["Python", "ML", "KNN Imputation", "Dimensionality Reduction"],
   },
   {
-    name: "Undergraduate Research Apprentice",
-    advisor: "Prof. Another Name",
-    description: "Analyzed healthcare data to identify patterns in patient outcomes",
+    name: "Single-Cell Lung vs. Trachea Analysis",
+    role: "BioE 149 Capstone",
+    description: "Analyzed 3,000+ cells from Tabula Muris scRNA-seq data using Smart-seq2. Applied KMeans, spectral clustering, and Phenograph on PCA-reduced features. Validated clusters via marker genes (Sftpc, Foxj1, Cd68) and generated UMAP embeddings.",
+    tags: ["scRNA-seq", "Clustering", "UMAP", "Seurat"],
+  },
+  {
+    name: "Influenza A Vaccine Target Evolution",
+    role: "Virology Capstone",
+    description: "Performed MSA and conservation scoring across HA, NA, PB1, PB2 proteins from 2018-2022 strains. Quantified selection pressure using dN/dS ratios, observed high antigenic drift in surface-exposed residues. Used JBrowse for mutation visualization.",
+    tags: ["Bioinformatics", "MSA", "dN/dS Analysis", "JBrowse"],
   },
 ];
 
