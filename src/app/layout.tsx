@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Sora, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-grotesk",
+const sora = Sora({
+  variable: "--font-sora",
   subsets: ["latin"],
 });
 
@@ -26,8 +26,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} antialiased font-sans`}
-        style={{ fontFamily: "var(--font-grotesk), system-ui, sans-serif" }}
+        className={`${sora.variable} ${jetbrainsMono.variable} antialiased font-sans`}
+        style={{ fontFamily: "var(--font-sora), system-ui, sans-serif" }}
       >
         {children}
       </body>
