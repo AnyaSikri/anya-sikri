@@ -51,7 +51,13 @@ export default function Berkeley() {
                       {club.logoText}
                     </div>
                     <div>
-                      <h4 className="font-semibold text-white">{club.name}</h4>
+                      {club.link ? (
+                        <a href={club.link} target="_blank" rel="noopener noreferrer" className="font-semibold text-white hover:text-[#FDB515] transition-colors">
+                          {club.name} →
+                        </a>
+                      ) : (
+                        <h4 className="font-semibold text-white">{club.name}</h4>
+                      )}
                       <p className="text-[#FDB515] text-sm">{club.role}</p>
                     </div>
                   </div>
@@ -82,7 +88,13 @@ export default function Berkeley() {
                   className="bg-[#13131a] border border-[#2a2a3c] rounded-xl p-5 hover:border-[#003262]/50 transition-colors"
                 >
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
-                    <h4 className="font-semibold text-white">{item.name}</h4>
+                    {item.link ? (
+                      <a href={item.link} target="_blank" rel="noopener noreferrer" className="font-semibold text-white hover:text-[#6366f1] transition-colors">
+                        {item.name} →
+                      </a>
+                    ) : (
+                      <h4 className="font-semibold text-white">{item.name}</h4>
+                    )}
                     {item.dates && (
                       <span className="text-gray-500 text-xs">{item.dates}</span>
                     )}

@@ -49,7 +49,18 @@ export default function Resume() {
                     <h3 className="text-xl font-bold text-white">{exp.role}</h3>
                     <span className="text-gray-400 text-sm">{exp.dates}</span>
                   </div>
-                  <p className="text-[#6366f1] font-medium mb-3">{exp.company}</p>
+                  {exp.link ? (
+                    <a
+                      href={exp.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#6366f1] font-medium mb-3 hover:underline inline-block"
+                    >
+                      {exp.company} →
+                    </a>
+                  ) : (
+                    <p className="text-[#6366f1] font-medium mb-3">{exp.company}</p>
+                  )}
                   <p className="text-gray-300 mb-4">{exp.achievement}</p>
                   <div className="flex flex-wrap gap-2">
                     {exp.tech.map((tech, techIndex) => (
