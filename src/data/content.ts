@@ -73,19 +73,6 @@ export const technicalProjects = [
     github: "https://github.com/anyasikri/ai-news-scraper",
     featured: true,
   },
-  {
-    title: "Clinical Evidence App",
-    description: "Healthcare application for analyzing clinical trial data and evidence",
-    tags: ["React", "Node.js", "PostgreSQL"],
-    github: "https://github.com/anyasikri/clinical-evidence-app",
-    live: "https://clinical-evidence.vercel.app",
-  },
-  {
-    title: "Safety Drug Pipeline",
-    description: "Data pipeline for pharmaceutical safety signal detection",
-    tags: ["Python", "Pandas", "Airflow"],
-    github: "https://github.com/anyasikri/safety_drug_pipeline",
-  },
 ];
 
 export const ventures = [
