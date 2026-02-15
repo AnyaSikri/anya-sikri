@@ -5,13 +5,13 @@ import { Mail, Linkedin, Github, Twitter } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 px-6 bg-[#13131a]/50">
+    <section id="contact" className="py-24 px-6 bg-transparent">
       <div className="max-w-4xl mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold text-white mb-6"
+          className="text-3xl md:text-4xl font-semibold text-white mb-6"
         >
           Let's Connect
         </motion.h2>
@@ -29,12 +29,12 @@ export default function Contact() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
+          transition={{ duration: 0.3 }}
           className="flex justify-center gap-6"
         >
           <a
             href="mailto:sikrianya@gmail.com"
-            className="w-14 h-14 bg-[#2a2a3c] rounded-full flex items-center justify-center text-gray-300 hover:bg-[#6366f1] hover:text-white transition-all"
+            className="w-14 h-14 bg-[var(--card-border)] rounded-full flex items-center justify-center text-gray-300 hover:bg-gray-600 hover:text-white transition-all"
           >
             <Mail size={24} />
           </a>
@@ -42,7 +42,7 @@ export default function Contact() {
             href="https://linkedin.com/in/anyasikri"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-14 h-14 bg-[#2a2a3c] rounded-full flex items-center justify-center text-gray-300 hover:bg-[#6366f1] hover:text-white transition-all"
+            className="w-14 h-14 bg-[var(--card-border)] rounded-full flex items-center justify-center text-gray-300 hover:bg-gray-600 hover:text-white transition-all"
           >
             <Linkedin size={24} />
           </a>
@@ -50,7 +50,7 @@ export default function Contact() {
             href="https://github.com/anyasikri"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-14 h-14 bg-[#2a2a3c] rounded-full flex items-center justify-center text-gray-300 hover:bg-[#6366f1] hover:text-white transition-all"
+            className="w-14 h-14 bg-[var(--card-border)] rounded-full flex items-center justify-center text-gray-300 hover:bg-gray-600 hover:text-white transition-all"
           >
             <Github size={24} />
           </a>
@@ -58,7 +58,7 @@ export default function Contact() {
             href="https://twitter.com/anyasikri"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-14 h-14 bg-[#2a2a3c] rounded-full flex items-center justify-center text-gray-300 hover:bg-[#6366f1] hover:text-white transition-all"
+            className="w-14 h-14 bg-[var(--card-border)] rounded-full flex items-center justify-center text-gray-300 hover:bg-gray-600 hover:text-white transition-all"
           >
             <Twitter size={24} />
           </a>
