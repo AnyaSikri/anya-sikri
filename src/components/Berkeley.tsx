@@ -11,7 +11,7 @@ export default function Berkeley() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold text-white text-center mb-4"
+          className="text-3xl md:text-4xl font-semibold text-white text-center mb-4"
         >
           The Berkeley Chapter
         </motion.h2>
@@ -28,8 +28,8 @@ export default function Berkeley() {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Clubs & Organizations */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-bold text-[#FDB515] mb-8 flex items-center gap-3">
@@ -43,8 +43,8 @@ export default function Berkeley() {
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="bg-[#13131a] border border-[#2a2a3c] rounded-xl p-4 hover:border-[#FDB515]/50 transition-colors"
+                  transition={{ duration: 0.3 }}
+                  className="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl p-4 hover:border-gray-600 transition-colors"
                 >
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-[#003262] rounded-lg flex items-center justify-center text-lg font-bold text-[#FDB515]">
@@ -69,8 +69,8 @@ export default function Berkeley() {
 
           {/* Research & Academic */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-bold text-[#003262] mb-8 flex items-center gap-3">
@@ -84,12 +84,12 @@ export default function Berkeley() {
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="bg-[#13131a] border border-[#2a2a3c] rounded-xl p-5 hover:border-[#003262]/50 transition-colors"
+                  transition={{ duration: 0.3 }}
+                  className="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl p-5 hover:border-gray-600 transition-colors"
                 >
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
                     {item.link ? (
-                      <a href={item.link} target="_blank" rel="noopener noreferrer" className="font-semibold text-white hover:text-[#6366f1] transition-colors">
+                      <a href={item.link} target="_blank" rel="noopener noreferrer" className="font-semibold text-white hover:text-white transition-colors">
                         {item.name}
                       </a>
                     ) : (
@@ -100,7 +100,7 @@ export default function Berkeley() {
                     )}
                   </div>
                   {item.role && (
-                    <p className="text-[#6366f1] text-sm mb-2">{item.role}</p>
+                    <p className="text-[var(--accent)] text-sm mb-2">{item.role}</p>
                   )}
                   <p className="text-gray-300 text-sm mb-3">{item.description}</p>
                   {item.tags && (
@@ -108,7 +108,7 @@ export default function Berkeley() {
                       {item.tags.map((tag: string, tagIndex: number) => (
                         <span
                           key={tagIndex}
-                          className="px-2 py-1 bg-[#2a2a3c] text-gray-300 rounded text-xs"
+                          className="px-2 py-1 bg-[var(--card-border)] text-gray-300 rounded text-xs"
                         >
                           {tag}
                         </span>
