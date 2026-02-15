@@ -19,13 +19,13 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ delay: index * 0.1 }}
-      className={`group bg-[#13131a] border border-[#2a2a3c] rounded-2xl overflow-hidden hover:border-[#6366f1] transition-all duration-300 hover:shadow-lg hover:shadow-[#6366f1]/10 ${
+      transition={{ duration: 0.3 }}
+      className={`group bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl overflow-hidden hover:border-gray-600 transition-colors duration-200 ${
         project.featured ? "md:col-span-2" : ""
       }`}
     >
       {/* Thumbnail placeholder */}
-      <div className="h-48 bg-gradient-to-br from-[#2a2a3c] to-[#13131a] flex items-center justify-center">
+      <div className="h-48 bg-gradient-to-br from-[var(--card-border)] to-[var(--card-bg)] flex items-center justify-center">
         <span className="text-6xl opacity-20">{project.title[0]}</span>
       </div>
 
@@ -37,7 +37,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           {project.tags.map((tag, tagIndex) => (
             <span
               key={tagIndex}
-              className="px-3 py-1 bg-[#6366f1]/10 text-[#6366f1] rounded-full text-sm"
+              className="px-3 py-1 bg-[var(--accent)]/10 text-[var(--accent)] rounded-full text-sm"
             >
               {tag}
             </span>
@@ -81,7 +81,7 @@ export default function Projects() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold text-white text-center mb-16"
+          className="text-3xl md:text-4xl font-semibold text-white text-center mb-16"
         >
           Projects
         </motion.h2>
@@ -92,7 +92,7 @@ export default function Projects() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-2xl font-bold text-[#6366f1] mb-8"
+            className="text-2xl font-bold text-[var(--accent)] mb-8"
           >
             Technical Projects
           </motion.h3>
@@ -109,7 +109,7 @@ export default function Projects() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-2xl font-bold text-[#f472b6] mb-8"
+            className="text-2xl font-bold text-[var(--accent-secondary)] mb-8"
           >
             Ventures
           </motion.h3>
