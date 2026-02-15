@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Outfit, JetBrains_Mono } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-mono",
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -26,8 +26,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${outfit.variable} ${jetbrainsMono.variable} antialiased font-sans`}
-        style={{ fontFamily: "var(--font-outfit), system-ui, sans-serif" }}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans`}
+        style={{ fontFamily: "var(--font-geist-sans), system-ui, sans-serif" }}
       >
         {children}
       </body>
