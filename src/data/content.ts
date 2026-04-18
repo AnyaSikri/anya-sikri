@@ -10,7 +10,7 @@ export const experiences = [
     link: "https://www.rigel.com/",
     role: "Engineer",
     dates: "Aug 2025 - Present",
-    achievement: "Built AI-powered Patient Safety Narrative System that cut medical writer workload from 2-4 hours to 15-30 minutes, automating clinical data extraction and report generation",
+    achievement: "Built an AI-powered system that auto-generates patient safety narratives from structured clinical data, cutting manual drafting time. Deployed using AWS for clinical team.",
     tech: ["Python", "OpenAI API", "AWS", "SQLite"],
   },
   {
