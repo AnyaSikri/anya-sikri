@@ -48,7 +48,7 @@ export default function Hero() {
           className="flex gap-6 justify-center items-center"
         >
           <a
-            href="#projects"
+            href="#resume"
             className="text-sm text-gray-300 hover:text-white transition-colors underline underline-offset-4 decoration-gray-600 hover:decoration-gray-300"
           >
             see my work
