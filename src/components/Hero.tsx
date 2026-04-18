@@ -38,7 +38,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.15 }}
           className="text-sm md:text-base text-gray-500 mb-8 max-w-xl mx-auto leading-relaxed"
         >
-          Data Science & Public Health student at UC Berkeley. Previously at PwC, Rigel Pharmaceuticals, and Abbott.
+          Data Science & Bioengineering student at UC Berkeley. Previously at PwC, Rigel Pharmaceuticals, and Abbott.
         </motion.p>
 
         <motion.div

@@ -8,7 +8,7 @@ export const experiences = [
     logoText: "Rigel",
     logo: "/images/logos/rigel.png",
     link: "https://www.rigel.com/",
-    role: "AI Engineer",
+    role: "Engineer",
     dates: "Aug 2025 - Present",
     achievement: "Built AI-powered Patient Safety Narrative System that cut medical writer workload from 2-4 hours to 15-30 minutes, automating clinical data extraction and report generation",
     tech: ["Python", "OpenAI API", "AWS", "SQLite"],
@@ -28,9 +28,9 @@ export const experiences = [
     logoText: "PwC",
     logo: "/images/logos/pwc.jpg",
     link: "https://www.pwc.com/",
-    role: "Cloud Engineering & Data Intern",
+    role: "Engineering Intern",
     dates: "Summer 2025",
-    achievement: "Designed LLM Evaluation Framework and vendor intelligence system that reduced model selection time by 60%, enabling transparent AI adoption decisions for insurance clients",
+    achievement: "Deployed LLM eval infrastructure on SageMaker to benchmark model performance across accuracy, hallucination rate, latency, and more; pipeline processed 100+ test cases and informed model selection from Bedrock catalog.",
     tech: ["AWS Bedrock", "Sagemaker", "Airflow", "dbt"],
   },
   {
@@ -57,7 +57,7 @@ export const experiences = [
     company: "Stanford Clinical Research (SCCR)",
     logoText: "SCCR",
     logo: "/images/logos/stanford.jpeg",
-    link: "https://med.stanford.edu/clinicalresearch.html",
+    link: "https://domcrh.stanford.edu/",
     role: "Data Science Intern",
     dates: "Summer 2023",
     achievement: "Mapped competitive landscapes across 200+ pharmaceutical patents, identifying whitespace in therapeutic areas to inform AI-driven drug development strategy",
@@ -74,28 +74,10 @@ export const technicalProjects = [
     featured: true,
   },
   {
-    title: "Single-Cell Lung vs. Trachea Analysis",
-    description: "Analyzed 3,000+ cells from Tabula Muris scRNA-seq data using Smart-seq2. Applied KMeans, spectral clustering, and Phenograph on PCA-reduced features. Validated clusters via marker genes and generated UMAP embeddings.",
-    tags: ["scRNA-seq", "Clustering", "UMAP", "Seurat"],
-  },
-  {
-    title: "Influenza A Vaccine Target Evolution",
-    description: "Performed MSA and conservation scoring across HA, NA, PB1, PB2 proteins from 2018-2022 strains. Quantified selection pressure using dN/dS ratios and visualized mutation maps with JBrowse.",
-    tags: ["Bioinformatics", "MSA", "dN/dS Analysis", "JBrowse"],
-  },
-];
-
-export const ventures = [
-  {
-    title: "Startup Idea 1",
-    description: "A platform that helps students discover and connect with research opportunities",
-    tags: ["EdTech", "Marketplace", "B2B"],
-    live: "https://example.com",
-  },
-  {
-    title: "Side Project",
-    description: "Consumer app that gamifies sustainable living habits",
-    tags: ["Consumer", "Sustainability", "Mobile"],
+    title: "Drug Script Analysis Tool",
+    description: "Prescription trend analyzer that compares Week-over-Week and Z-Score methods side-by-side, with drug-maturity-aware thresholds and holiday-adjusted baselines. Ships as a Streamlit web app, CLI, and Colab notebook with interactive Plotly dashboards.",
+    tags: ["Python", "Streamlit", "Plotly", "Pandas"],
+    github: "https://github.com/AnyaSikri/ishara-demo",
   },
 ];
 

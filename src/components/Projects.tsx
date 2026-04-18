@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
-import { technicalProjects, ventures } from "@/data/content";
+import { technicalProjects } from "@/data/content";
 
 interface Project {
   title: string;
@@ -86,38 +86,10 @@ export default function Projects() {
           Projects
         </motion.h2>
 
-        {/* Technical Projects */}
-        <div className="mb-16">
-          <motion.h3
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-2xl font-bold text-[var(--accent)] mb-8"
-          >
-            Technical Projects
-          </motion.h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            {technicalProjects.map((project, index) => (
-              <ProjectCard key={index} project={project} index={index} />
-            ))}
-          </div>
-        </div>
-
-        {/* Ventures */}
-        <div>
-          <motion.h3
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-2xl font-bold text-[var(--accent-secondary)] mb-8"
-          >
-            Ventures
-          </motion.h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            {ventures.map((project, index) => (
-              <ProjectCard key={index} project={project} index={index} />
-            ))}
-          </div>
+        <div className="grid md:grid-cols-2 gap-6">
+          {technicalProjects.map((project, index) => (
+            <ProjectCard key={index} project={project} index={index} />
+          ))}
         </div>
       </div>
     </section>
