@@ -154,8 +154,8 @@ export default function TradingPage() {
 
   const invested = positionsValue(portfolio, prices);
   const totalValue = portfolio.cash + invested;
-  const totalPnl = totalValue - STARTING_CASH;
-  const pnlPct = (totalPnl / STARTING_CASH) * 100;
+  const totalPnl = totalValue - portfolio.startingCash;
+  const pnlPct = (totalPnl / portfolio.startingCash) * 100;
 
   const tradeQuote = trade ? quotes[trade.symbol] : undefined;
   const tradePrice = tradeQuote && Number.isFinite(tradeQuote.price) ? tradeQuote.price : null;
@@ -219,7 +219,7 @@ export default function TradingPage() {
   };
 
   const resetPortfolio = () => {
-    if (window.confirm("Reset everything back to $1,000 cash? This clears all positions and history.")) {
+    if (window.confirm(`Reset everything back to ${formatMoney(STARTING_CASH)} cash? This clears all positions and history.`)) {
       setPortfolio(initialPortfolio());
     }
   };

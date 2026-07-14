@@ -1,7 +1,7 @@
 // Core types and logic for the paper swing-trading platform.
 // All money values are USD; shares may be fractional.
 
-export const STARTING_CASH = 1000;
+export const STARTING_CASH = 4000;
 export const STORAGE_KEY = "swing-trading-portfolio-v1";
 
 export interface Position {
@@ -22,6 +22,7 @@ export interface Trade {
 
 export interface PortfolioState {
   cash: number;
+  startingCash: number;
   positions: Position[];
   trades: Trade[];
   watchlist: string[];
@@ -52,6 +53,7 @@ export const DEFAULT_WATCHLIST = ["AAPL", "MSFT", "NVDA", "AMZN", "TSLA", "SPY"]
 export function initialPortfolio(): PortfolioState {
   return {
     cash: STARTING_CASH,
+    startingCash: STARTING_CASH,
     positions: [],
     trades: [],
     watchlist: [...DEFAULT_WATCHLIST],
@@ -68,11 +70,21 @@ export function loadPortfolio(): PortfolioState {
     if (typeof parsed.cash !== "number" || !Array.isArray(parsed.positions)) {
       return initialPortfolio();
     }
-    return {
+    const state: PortfolioState = {
       ...initialPortfolio(),
       ...parsed,
       watchlist: parsed.watchlist?.length ? parsed.watchlist : [...DEFAULT_WATCHLIST],
     };
+    // Portfolios saved before startingCash existed began with $1,000; top
+    // them up to the current starting amount without touching positions.
+    if (typeof parsed.startingCash !== "number") {
+      state.startingCash = STARTING_CASH;
+      state.cash = parsed.cash + (STARTING_CASH - 1000);
+    } else if (parsed.startingCash < STARTING_CASH) {
+      state.cash = parsed.cash + (STARTING_CASH - parsed.startingCash);
+      state.startingCash = STARTING_CASH;
+    }
+    return state;
   } catch {
     return initialPortfolio();
   }
