@@ -13,7 +13,7 @@ export default function Berkeley() {
           viewport={{ once: true }}
           className="font-mono text-[11px] tracking-[0.2em] text-[var(--accent)] text-center mb-3"
         >
-          03 — CAMPUS
+          04 — CAMPUS
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

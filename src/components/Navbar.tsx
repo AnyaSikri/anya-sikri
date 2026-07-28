@@ -2,9 +2,10 @@ import Link from "next/link";
 import { Activity } from "lucide-react";
 
 const navLinks = [
-  { href: "#focus", label: "focus" },
+  { href: "#focus", label: "focus", desktopOnly: true },
   { href: "#resume", label: "work" },
-  { href: "#berkeley", label: "berkeley" },
+  { href: "#projects", label: "projects" },
+  { href: "#berkeley", label: "berkeley", desktopOnly: true },
   { href: "#contact", label: "contact" },
 ];
 
@@ -24,7 +25,9 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="font-mono text-xs tracking-[0.12em] text-[var(--ink-muted)] hover:text-[var(--accent)] transition-colors"
+              className={`font-mono text-xs tracking-[0.12em] text-[var(--ink-muted)] hover:text-[var(--accent)] transition-colors ${
+                link.desktopOnly ? "hidden sm:block" : ""
+              }`}
             >
               {link.label}
             </Link>

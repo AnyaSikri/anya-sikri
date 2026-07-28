@@ -112,19 +112,37 @@ export const experiences = [
   },
 ];
 
+// status: "live" (hosted demo) | "prototype" (works, demo/synthetic data)
+//         | "case-study" (writeup/screenshots only) | "code" (repo only)
+// image: drop a screenshot in /public/images/projects/ and reference it here —
+//        cards fall back to a styled placeholder until the file exists
 export const technicalProjects = [
   {
-    title: "AI News Scraper",
-    description: "Automated web scraper that aggregates and summarizes tech news using NLP",
-    tags: ["Python", "BeautifulSoup", "OpenAI API"],
-    github: "https://github.com/anyasikri/ai-news-scraper",
-    featured: true,
+    title: "SAE Narrative Generator",
+    description:
+      "Clinical-style UI for drafting serious adverse event narratives from structured case data — the interface pattern behind my Rigel work, rebuilt as a standalone demo on synthetic patient cases.",
+    tags: ["React", "LLMs", "Clinical Safety"],
+    status: "prototype",
+    note: "Synthetic data only",
+    image: "/images/projects/sae-narratives.png",
+    // demo: "https://..." — add when the demo is deployed
   },
   {
     title: "Drug Script Analysis Tool",
-    description: "Prescription trend analyzer that compares Week-over-Week and Z-Score methods side-by-side, with drug-maturity-aware thresholds and holiday-adjusted baselines. Ships as a Streamlit web app, CLI, and Colab notebook with interactive Plotly dashboards.",
+    description:
+      "Prescription trend analyzer that compares Week-over-Week and Z-Score methods side-by-side, with drug-maturity-aware thresholds and holiday-adjusted baselines. Ships as a Streamlit web app, CLI, and Colab notebook with interactive Plotly dashboards.",
     tags: ["Python", "Streamlit", "Plotly", "Pandas"],
+    status: "prototype",
     github: "https://github.com/AnyaSikri/ishara-demo",
+    image: "/images/projects/drug-script.png",
+  },
+  {
+    title: "AI News Scraper",
+    description:
+      "Automated web scraper that aggregates and summarizes tech news using NLP",
+    tags: ["Python", "BeautifulSoup", "OpenAI API"],
+    status: "code",
+    github: "https://github.com/anyasikri/ai-news-scraper",
   },
 ];
 
