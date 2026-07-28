@@ -1,21 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Anya Sikri | Building AI for Healthcare & Life Sciences",
-  description: "Anya Sikri - AI Engineer building intelligent systems for healthcare, pharma, and life sciences.",
-  keywords: ["software engineer", "berkeley", "portfolio", "developer"],
+  description: "Anya Sikri - Product at Qualified Health, building safe generative AI infrastructure for healthcare and life sciences.",
+  keywords: ["product manager", "healthcare AI", "generative AI", "berkeley", "portfolio"],
 };
 
 export default function RootLayout({
@@ -26,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans`}
+        className={`${GeistSans.variable} ${GeistMono.variable} antialiased font-sans`}
         style={{ fontFamily: "var(--font-geist-sans), system-ui, sans-serif" }}
       >
         {children}

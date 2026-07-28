@@ -1,90 +1,168 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Linkedin } from "lucide-react";
+import { Linkedin, Github, ArrowRight } from "lucide-react";
+import Ekg from "./Ekg";
+
+const monitorRows = [
+  { label: "GENAI PRODUCT", detail: "Qualified Health" },
+  { label: "CLINICAL RESEARCH", detail: "IGI · UCSF" },
+  { label: "BIOTECH STRATEGY", detail: "Abbott · Ishara" },
+];
 
 export default function Hero() {
   return (
-    <section className="min-h-[60vh] flex items-center justify-center relative overflow-hidden">
-      {/* Subtle gradient background */}
-      <div className="absolute inset-0 bg-[var(--background)]">
-        <div className="absolute inset-0">
-          <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-[var(--accent)] rounded-full filter blur-[150px] opacity-[0.06]" />
-          <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] bg-[var(--accent-secondary)] rounded-full filter blur-[150px] opacity-[0.04]" />
-        </div>
+    <section className="relative overflow-hidden">
+      {/* Soft teal wash behind the hero */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-[var(--accent)] rounded-full filter blur-[180px] opacity-[0.07]" />
+        <div className="absolute top-1/2 -left-40 w-[400px] h-[400px] bg-[var(--navy)] rounded-full filter blur-[180px] opacity-[0.05]" />
       </div>
 
-      <div className="relative z-10 text-center px-6 max-w-3xl">
-        <motion.h1
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-4xl md:text-6xl font-semibold text-white mb-4 tracking-tight"
-        >
-          Anya Sikri
-        </motion.h1>
+      <div className="relative z-10 max-w-5xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 grid md:grid-cols-[1.4fr_1fr] gap-12 items-center">
+        {/* Left: intro */}
+        <div>
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="inline-flex items-center gap-2 mb-6 px-3 py-1.5 rounded-full border border-[var(--card-border)] bg-white/70"
+          >
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--accent-bright)] opacity-60" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--accent)]" />
+            </span>
+            <span className="font-mono text-[11px] tracking-[0.18em] text-[var(--accent)]">
+              HEALTHCARE × AI × STRATEGY
+            </span>
+          </motion.div>
 
-        <motion.p
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-lg md:text-xl text-gray-400 mb-3"
-        >
-          Building AI for Healthcare & Life Sciences
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.15 }}
-          className="text-sm md:text-base text-gray-500 mb-8 max-w-xl mx-auto leading-relaxed"
-        >
-          Data Science & Bioengineering student at UC Berkeley. Previously at PwC, Rigel Pharmaceuticals, and Abbott.
-        </motion.p>
+          <motion.h1
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.05 }}
+            className="text-5xl md:text-6xl font-semibold text-[var(--navy)] tracking-tight mb-2"
+          >
+            Anya Sikri
+          </motion.h1>
 
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="mb-5 -ml-1"
+          >
+            <Ekg className="w-64 md:w-80 h-10" />
+          </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+            className="text-lg md:text-xl text-[var(--ink-soft)] mb-3"
+          >
+            Building AI for healthcare &amp; life sciences.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-sm md:text-base text-[var(--ink-muted)] mb-8 max-w-lg leading-relaxed"
+          >
+            Product at Qualified Health, building the infrastructure health
+            systems need to deploy generative AI safely. UC Berkeley Data
+            Science &amp; Bioengineering alum; previously at Rigel
+            Pharmaceuticals, PwC, and Abbott.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.25 }}
+            className="flex flex-wrap items-center gap-4"
+          >
+            <a
+              href="#resume"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[var(--accent)] text-white text-sm font-medium hover:bg-[#0d635c] transition-colors shadow-sm"
+            >
+              See my work
+              <ArrowRight size={16} />
+            </a>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[var(--card-border)] bg-white text-sm font-medium text-[var(--navy)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
+            >
+              Get in touch
+            </a>
+            <span className="flex items-center gap-4 ml-1">
+              <a
+                href="https://linkedin.com/in/anyasikri"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="text-[var(--ink-muted)] hover:text-[var(--accent)] transition-colors"
+              >
+                <Linkedin size={20} />
+              </a>
+              <a
+                href="https://github.com/anyasikri"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="text-[var(--ink-muted)] hover:text-[var(--accent)] transition-colors"
+              >
+                <Github size={20} />
+              </a>
+            </span>
+          </motion.div>
+        </div>
+
+        {/* Right: patient-monitor style status card */}
         <motion.div
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex gap-6 justify-center items-center"
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="hidden md:block"
         >
-          <a
-            href="#resume"
-            className="text-sm text-gray-300 hover:text-white transition-colors underline underline-offset-4 decoration-gray-600 hover:decoration-gray-300"
-          >
-            see my work
-          </a>
-          <a
-            href="#contact"
-            className="text-sm text-gray-300 hover:text-white transition-colors underline underline-offset-4 decoration-gray-600 hover:decoration-gray-300"
-          >
-            get in touch
-          </a>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-8 flex justify-center gap-5"
-        >
-          <a
-            href="https://linkedin.com/in/anyasikri"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 hover:text-gray-300 transition-colors"
-          >
-            <Linkedin size={20} />
-          </a>
-          <a
-            href="https://github.com/anyasikri"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 hover:text-gray-300 transition-colors"
-          >
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-            </svg>
-          </a>
+          <div className="rounded-2xl border border-[var(--card-border)] bg-white shadow-[0_8px_30px_rgba(18,58,82,0.06)] overflow-hidden">
+            <div className="flex items-center justify-between px-5 py-3 border-b border-[var(--card-border)] bg-[var(--background)]">
+              <span className="font-mono text-[11px] tracking-[0.15em] text-[var(--ink-muted)]">
+                SIKRI, ANYA
+              </span>
+              <span className="font-mono text-[11px] tracking-[0.15em] text-[var(--accent)]">
+                STATUS: BUILDING
+              </span>
+            </div>
+            <div className="px-5 pt-4">
+              <Ekg className="w-full h-12" />
+            </div>
+            <ul className="px-5 py-4 space-y-3">
+              {monitorRows.map((row) => (
+                <li
+                  key={row.label}
+                  className="flex items-center justify-between gap-4"
+                >
+                  <span className="flex items-center gap-2.5">
+                    <span className="relative flex h-1.5 w-1.5">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--accent-bright)] opacity-50" />
+                      <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[var(--accent)]" />
+                    </span>
+                    <span className="font-mono text-xs tracking-[0.12em] text-[var(--foreground)]">
+                      {row.label}
+                    </span>
+                  </span>
+                  <span className="text-xs text-[var(--ink-muted)]">
+                    {row.detail}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <div className="px-5 py-3 border-t border-[var(--card-border)] bg-[var(--background)]">
+              <span className="font-mono text-[10px] tracking-[0.15em] text-[var(--ink-muted)]">
+                UC BERKELEY ALUM · DATA SCIENCE + BIOENGINEERING
+              </span>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

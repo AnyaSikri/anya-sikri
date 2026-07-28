@@ -2,14 +2,61 @@
 // EDIT THIS FILE TO UPDATE YOUR CONTENT
 // ========================================
 
+// Headline numbers shown in the "vitals" strip under the hero
+export const stats = [
+  { value: "7", label: "Industry & research roles" },
+  { value: "200+", label: "Pharma patents mapped" },
+  { value: "60+", label: "Health-tech startups evaluated" },
+  { value: "8", label: "M&A targets assessed" },
+];
+
+// The three pillars shown in the "Focus" section
+export const focusAreas = [
+  {
+    index: "01",
+    tag: "BUILDER",
+    title: "GenAI for Health Systems",
+    description:
+      "Product and engineering for AI on clinical data — patient safety narratives from structured data, LLM eval infrastructure, and governance that keeps genAI honest in regulated settings.",
+    proof: "Qualified Health · Rigel Pharmaceuticals · PwC",
+  },
+  {
+    index: "02",
+    tag: "SCIENTIST",
+    title: "Bench-to-Data Biology",
+    description:
+      "Cancer drug screening with patient-derived organoids, scRNA-seq pipelines, and ML models on real patient datasets — where the biology meets the data.",
+    proof: "Innovative Genomics Institute · UCSF · Stanford",
+  },
+  {
+    index: "03",
+    tag: "OPERATOR",
+    title: "Biotech Strategy & Investing",
+    description:
+      "Due diligence on pharma acquisitions, biotech equity research across drug cycles, and matching health-tech startups with the right investors.",
+    proof: "Abbott · Ishara Investments · Health Engine",
+  },
+];
+
 export const experiences = [
+  {
+    company: "Qualified Health",
+    logoText: "QH",
+    logoColor: "#0f766e",
+    link: "https://www.qualifiedhealthai.com/",
+    role: "Product Manager",
+    dates: "Jul 2026 - Present",
+    achievement:
+      "Product for enterprise generative AI in health systems — building the governance, monitoring, and deployment infrastructure that lets hospitals put genAI to work safely at scale.",
+    tech: ["Product Strategy", "GenAI Governance", "Health Systems"],
+  },
   {
     company: "Rigel Pharmaceuticals",
     logoText: "Rigel",
     logo: "/images/logos/rigel.png",
     link: "https://www.rigel.com/",
     role: "Engineer",
-    dates: "Aug 2025 - Present",
+    dates: "Aug 2025 - Jul 2026",
     achievement: "Built an AI-powered system that auto-generates patient safety narratives from structured clinical data, cutting manual drafting time. Deployed using AWS for clinical team.",
     tech: ["Python", "OpenAI API", "AWS", "SQLite"],
   },

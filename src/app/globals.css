@@ -1,20 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0f;
-  --foreground: #e2e8f0;
-  --accent: #7c7fba;
-  --accent-secondary: #b07890;
-  --card-bg: #111118;
-  --card-border: #1f1f2a;
+  /* Clinical light theme — navy ink, medical teal, graph-paper chart */
+  --background: #f6f8f7;
+  --surface: #ffffff;
+  --foreground: #122b36;
+  --ink-soft: #33505f;
+  --ink-muted: #5b7282;
+  --accent: #0f766e;
+  --accent-bright: #14b8a6;
+  --accent-wash: #e7f2f0;
+  --navy: #123a52;
+  --card-bg: #ffffff;
+  --card-border: #dde7e4;
   --berkeley-blue: #003262;
+  --berkeley-gold: #946b00;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
-  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-wash: var(--accent-wash);
+  --color-navy: var(--navy);
   --color-card-bg: var(--card-bg);
   --color-card-border: var(--card-border);
   --color-berkeley: var(--berkeley-blue);
@@ -23,7 +31,12 @@
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
+  /* Faint graph-paper grid, like clinical chart paper */
+  background-image:
+    linear-gradient(to right, rgba(15, 118, 110, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 118, 110, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
@@ -35,18 +48,4 @@ html {
 ::selection {
   background: var(--accent);
   color: white;
-}
-
-/* Subtle noise texture for depth */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  opacity: 0.015;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  z-index: 1;
 }
