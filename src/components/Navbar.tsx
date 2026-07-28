@@ -1,27 +1,30 @@
 import Link from "next/link";
+import { Activity } from "lucide-react";
 
 const navLinks = [
-  { href: "/", label: "index" },
+  { href: "#focus", label: "focus" },
   { href: "#resume", label: "work" },
   { href: "#berkeley", label: "berkeley" },
+  { href: "#contact", label: "contact" },
 ];
 
 export default function Navbar() {
   return (
-    <nav className="w-full px-6 pt-8 pb-4">
-      <div className="max-w-5xl mx-auto flex items-center justify-between">
+    <nav className="sticky top-0 z-50 w-full border-b border-[var(--card-border)] bg-white/75 backdrop-blur-md">
+      <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
         <Link
           href="/"
-          className="text-sm text-gray-300 hover:text-white transition-colors"
+          className="flex items-center gap-2 text-sm font-medium text-[var(--navy)] hover:text-[var(--accent)] transition-colors whitespace-nowrap"
         >
+          <Activity size={16} className="text-[var(--accent)] flex-shrink-0" />
           anya sikri
         </Link>
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-4 md:gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm text-gray-400 hover:text-white transition-colors"
+              className="font-mono text-xs tracking-[0.12em] text-[var(--ink-muted)] hover:text-[var(--accent)] transition-colors"
             >
               {link.label}
             </Link>

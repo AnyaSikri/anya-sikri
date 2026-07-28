@@ -2,6 +2,42 @@
 // EDIT THIS FILE TO UPDATE YOUR CONTENT
 // ========================================
 
+// Headline numbers shown in the "vitals" strip under the hero
+export const stats = [
+  { value: "6", label: "Industry & research roles" },
+  { value: "200+", label: "Pharma patents mapped" },
+  { value: "60+", label: "Health-tech startups evaluated" },
+  { value: "8", label: "M&A targets assessed" },
+];
+
+// The three pillars shown in the "Focus" section
+export const focusAreas = [
+  {
+    index: "01",
+    tag: "ENGINEER",
+    title: "AI for Clinical Data",
+    description:
+      "Building AI systems that turn structured clinical data into patient safety narratives, and eval infrastructure that keeps LLMs honest in regulated settings.",
+    proof: "Rigel Pharmaceuticals · PwC",
+  },
+  {
+    index: "02",
+    tag: "SCIENTIST",
+    title: "Bench-to-Data Biology",
+    description:
+      "Cancer drug screening with patient-derived organoids, scRNA-seq pipelines, and ML models on real patient datasets — where the biology meets the data.",
+    proof: "Innovative Genomics Institute · UCSF · Stanford",
+  },
+  {
+    index: "03",
+    tag: "OPERATOR",
+    title: "Biotech Strategy & Investing",
+    description:
+      "Due diligence on pharma acquisitions, biotech equity research across drug cycles, and matching health-tech startups with the right investors.",
+    proof: "Abbott · Ishara Investments · Health Engine",
+  },
+];
+
 export const experiences = [
   {
     company: "Rigel Pharmaceuticals",
