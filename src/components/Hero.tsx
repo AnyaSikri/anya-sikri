@@ -5,7 +5,7 @@ import { Linkedin, Github, ArrowRight } from "lucide-react";
 import Ekg from "./Ekg";
 
 const monitorRows = [
-  { label: "AI SYSTEMS", detail: "Rigel · PwC" },
+  { label: "GENAI PRODUCT", detail: "Qualified Health" },
   { label: "CLINICAL RESEARCH", detail: "IGI · UCSF" },
   { label: "BIOTECH STRATEGY", detail: "Abbott · Ishara" },
 ];
@@ -69,9 +69,10 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-sm md:text-base text-[var(--ink-muted)] mb-8 max-w-lg leading-relaxed"
           >
-            Data Science &amp; Bioengineering student at UC Berkeley, working at
-            the intersection of clinical data, biology, and the business of
-            biotech. Previously at PwC, Rigel Pharmaceuticals, and Abbott.
+            Product at Qualified Health, building the infrastructure health
+            systems need to deploy generative AI safely. UC Berkeley Data
+            Science &amp; Bioengineering alum; previously at Rigel
+            Pharmaceuticals, PwC, and Abbott.
           </motion.p>
 
           <motion.div
@@ -158,7 +159,7 @@ export default function Hero() {
             </ul>
             <div className="px-5 py-3 border-t border-[var(--card-border)] bg-[var(--background)]">
               <span className="font-mono text-[10px] tracking-[0.15em] text-[var(--ink-muted)]">
-                UC BERKELEY · DATA SCIENCE + BIOENGINEERING
+                UC BERKELEY ALUM · DATA SCIENCE + BIOENGINEERING
               </span>
             </div>
           </div>

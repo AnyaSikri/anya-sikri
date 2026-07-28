@@ -5,8 +5,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Anya Sikri | Building AI for Healthcare & Life Sciences",
-  description: "Anya Sikri - AI Engineer building intelligent systems for healthcare, pharma, and life sciences.",
-  keywords: ["software engineer", "berkeley", "portfolio", "developer"],
+  description: "Anya Sikri - Product at Qualified Health, building safe generative AI infrastructure for healthcare and life sciences.",
+  keywords: ["product manager", "healthcare AI", "generative AI", "berkeley", "portfolio"],
 };
 
 export default function RootLayout({
