@@ -25,7 +25,7 @@ export default function Contact() {
           className="rounded-3xl border border-[var(--card-border)] bg-white shadow-[0_8px_30px_rgba(18,58,82,0.06)] px-8 py-12 md:px-14 text-center"
         >
           <p className="font-mono text-[11px] tracking-[0.2em] text-[var(--accent)] mb-3">
-            04 — GET IN TOUCH
+            05 — GET IN TOUCH
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold text-[var(--navy)] mb-4 tracking-tight">
             Let&apos;s Connect
