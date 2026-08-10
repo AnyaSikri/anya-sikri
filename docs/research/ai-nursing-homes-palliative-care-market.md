@@ -72,12 +72,48 @@ Compliance caveat: no vendor recommends fully autonomous MDS/PDPM coding — sug
 5. **Validation gap.** Peer-reviewed scoping reviews (JPSM 2025) note that real-world validation, transparency, and reproducibility of palliative AI tools remain largely unexamined — a risk and an opportunity for evidence-first entrants.
 6. **Value-based care alignment.** Tools that reduce hospitalizations/ICU use (Koda, Acclivity, Saiva) monetize through shared savings and CMS programs, not just SaaS fees.
 
+## Accelerator Footprint & Buyer Map
+
+### Who came through YC / accelerators
+
+| Company | Accelerator | What it does | Sells to |
+|---|---|---|---|
+| **Moonset Health** (legal entity "summed ai, Inc.") | Y Combinator F24 | AI scribe for hospice/post-acute nurses; notes tuned to LCD/CMS compliance requirements; claims nurses save ~3 hrs/day | Hospice, home health, and SNF agencies (B2B) |
+| **Oma Care** | Y Combinator W24 | Gets family caregivers paid (up to ~$60k/yr) via consumer-directed care programs | Consumers/family caregivers, reimbursed through Medicaid-type programs |
+| **Sage Care** | Y Combinator | Automates home care agency operations with AI (caregiver matching/ops) | Home care agencies |
+| **Koda Health** | TMC Innovation Biodesign (spun out) + Techstars (investor in Series A) | AI-guided advance care planning | Health systems, payers, ACOs/value-based groups (Memorial Hermann, UPMC, Guidehealth) |
+| **SafelyYou** | UC Berkeley SkyDeck; spun out of Berkeley AI Research; NSF/NIH SBIR-funded | Camera AI fall detection | Senior living operators (memory care/AL), per-community B2B; now $100M+ raised |
+
+Dedicated agetech accelerator pipeline: **Techstars Future of Longevity** (with Pivotal Ventures), **AARP AgeTech Collaborative** (8-week, no-equity accelerator; ~1/3 of its CES 2026 cohort was AI-focused), and **MassChallenge × AARP**. AARP also invests directly (it's on Koda's cap table).
+
+### Who buys what (the money map)
+
+- **Senior living / memory care operators** buy fall detection and nurse-call replacement (SafelyYou, Sage, Inspiren, Vayyar). ROI pitch: fewer ER transports, liability, occupancy, staff retention.
+- **SNF chains** buy predictive analytics and MDS/reimbursement tools (Saiva, VirtuSense, Oler). ROI: avoided readmissions (VBP penalties), PDPM revenue capture.
+- **Hospice & home health agencies** buy prognostication and documentation (Medalogix Muse, Moonset, EHR scribes). ROI: right-timed final-week visits (CMS quality measures), compliance, clinician retention.
+- **Payers / ACOs / health systems** buy ACP and palliative population analytics (Koda, Acclivity, Vynca). ROI: total-cost-of-care reduction — the strongest monetization in the space because it taps shared savings, not thin facility margins.
+- **States / government** buy companionship at population scale (ElliQ via NY/FL/NJ aging agencies).
+- **Home care agencies** buy in-home monitoring intelligence (Sensi.AI, Sage Care).
+
+A telling imbalance from Crunchbase: ~80% of elder-care VC dollars go to B2B tech for institutional care, yet only ~3% of older adults live in institutions.
+
 ## Gaps / Whitespace Observations
 
 - Palliative-specific **symptom-management decision support** is early; most deployed AI is prognostic or administrative.
 - **Family communication and bereavement support** is largely unaddressed by AI vendors.
 - Few tools bridge **nursing home ↔ hospice transitions** (identifying residents who should shift to comfort-focused care); Acclivity is closest but is ACO/payer-oriented.
 - Multilingual and culturally-adapted goals-of-care tools are scarce.
+- **Accelerator activity clusters in documentation/ops AI** (Moonset, Sage Care) — the segment being commoditized fastest by EHR-native scribes. Almost no YC/accelerator startup is attacking the clinical/prognostic layer of palliative care, family-facing communication, or the SNF→hospice transition, and the buyer with the deepest pockets (payers/VBC entities) is served by only a handful of companies (Koda, Acclivity).
+
+## Accelerator & Buyer-Map Sources
+
+- [YC — Moonset Health](https://www.ycombinator.com/companies/moonset-health) · [Moonset Health site](https://www.moonsethealth.com/)
+- [YC — Sage Care](https://www.ycombinator.com/companies/sagecare) · [Y Combinator — Oma Care launch](https://www.linkedin.com/posts/y-combinator_launch-yc-oma-care-get-paid-for-taking-activity-7173482905002860544-oKpu)
+- [TMC — Koda Health funding](https://www.tmc.edu/press-releases/koda-health-secures-new-funding-to-expand-advance-care-planning-capabilities/) · [Hospice News — Koda $7M Series A (Oct 2025)](https://hospicenews.com/2025/10/02/advance-care-planning-platform-koda-health-raises-7m-in-series-a-funding-round/)
+- [Berkeley Mobile Sensing Lab — SafelyYou origins](https://bayen.berkeley.edu/research/past-nestsense-safelyyou) · [SafelyYou $43M Series C](https://www.finsmes.com/2025/01/safelyyou-raises-43m-in-series-c-funding.html)
+- [Techstars Future of Longevity × AARP AgeTech Collaborative](https://www.techstars.com/newsroom/techstars-future-of-longevity-aarp) · [AgeTech Collaborative accelerator](https://agetechcollaborative.org/startups/) · [MassChallenge × AARP](https://masschallenge.org/programs-aarp/)
+- [Crunchbase — Funding surges for startups serving older adults](https://news.crunchbase.com/startups/eldercare-senior-home-care-startups-funding/)
+- [Sage $35M raise (AlleyWatch)](https://www.alleywatch.com/2024/12/sage-senior-living-operations-platform-care-management-technology-raj-mehra/) · [Inspiren $35M (Fierce Healthcare)](https://www.fiercehealthcare.com/ai-and-machine-learning/inspiren-banks-35m-scale-ai-powered-senior-living-technology)
 
 ## Sources
 
