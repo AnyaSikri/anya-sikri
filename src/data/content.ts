@@ -122,10 +122,10 @@ export const technicalProjects = [
     description:
       "Clinical-style UI for drafting serious adverse event narratives from structured case data — the interface pattern behind my Rigel work, rebuilt as a standalone demo on synthetic patient cases.",
     tags: ["React", "LLMs", "Clinical Safety"],
-    status: "prototype",
+    status: "live",
     note: "Synthetic data only",
     image: "/images/projects/sae-narratives.png",
-    // demo: "https://..." — add when the demo is deployed
+    demo: "/sae-demo",
   },
   {
     title: "Drug Script Analysis Tool",
