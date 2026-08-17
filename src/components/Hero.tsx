@@ -5,7 +5,7 @@ import { Linkedin, Github, ArrowRight } from "lucide-react";
 import Ekg from "./Ekg";
 
 const monitorRows = [
-  { label: "GENAI PRODUCT", detail: "Qualified Health" },
+  { label: "GENAI SYSTEMS", detail: "Rigel · PwC" },
   { label: "CLINICAL RESEARCH", detail: "IGI · UCSF" },
   { label: "BIOTECH STRATEGY", detail: "Abbott · Ishara" },
 ];
@@ -22,26 +22,20 @@ export default function Hero() {
       <div className="relative z-10 max-w-5xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 grid md:grid-cols-[1.4fr_1fr] gap-12 items-center">
         {/* Left: intro */}
         <div>
-          <motion.div
+          <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 mb-6 px-3 py-1.5 rounded-full border border-[var(--card-border)] bg-white/70"
+            className="font-mono text-xs tracking-[0.08em] text-[var(--ink-muted)] mb-5"
           >
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--accent-bright)] opacity-60" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--accent)]" />
-            </span>
-            <span className="font-mono text-[11px] tracking-[0.18em] text-[var(--accent)]">
-              HEALTHCARE × AI × STRATEGY
-            </span>
-          </motion.div>
+            healthcare × ai × strategy
+          </motion.p>
 
           <motion.h1
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.05 }}
-            className="text-5xl md:text-6xl font-semibold text-[var(--navy)] tracking-tight mb-2"
+            className="font-display text-6xl md:text-7xl font-semibold text-[var(--navy)] tracking-tight mb-2"
           >
             Anya Sikri
           </motion.h1>
@@ -69,10 +63,9 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-sm md:text-base text-[var(--ink-muted)] mb-8 max-w-lg leading-relaxed"
           >
-            Product at Qualified Health, building the infrastructure health
-            systems need to deploy generative AI safely. UC Berkeley Data
-            Science &amp; Bioengineering alum; previously at Rigel
-            Pharmaceuticals, PwC, and Abbott.
+            Building the infrastructure health systems need to deploy
+            generative AI safely. UC Berkeley Data Science &amp; Bioengineering
+            alum; previously at Rigel Pharmaceuticals, PwC, and Abbott.
           </motion.p>
 
           <motion.div
@@ -90,7 +83,7 @@ export default function Hero() {
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[var(--card-border)] bg-white text-sm font-medium text-[var(--navy)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
+              className="text-sm font-medium text-[var(--navy)] underline underline-offset-4 decoration-[var(--card-border)] hover:decoration-[var(--accent)] hover:text-[var(--accent)] transition-colors"
             >
               Get in touch
             </a>

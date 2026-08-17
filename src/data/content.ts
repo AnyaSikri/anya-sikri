@@ -4,7 +4,7 @@
 
 // Headline numbers shown in the "vitals" strip under the hero
 export const stats = [
-  { value: "7", label: "Industry & research roles" },
+  { value: "6", label: "Industry & research roles" },
   { value: "200+", label: "Pharma patents mapped" },
   { value: "60+", label: "Health-tech startups evaluated" },
   { value: "8", label: "M&A targets assessed" },
@@ -15,10 +15,10 @@ export const focusAreas = [
   {
     index: "01",
     tag: "BUILDER",
-    title: "GenAI for Health Systems",
+    title: "GenAI for Clinical Data",
     description:
       "Product and engineering for AI on clinical data — patient safety narratives from structured data, LLM eval infrastructure, and governance that keeps genAI honest in regulated settings.",
-    proof: "Qualified Health · Rigel Pharmaceuticals · PwC",
+    proof: "Rigel Pharmaceuticals · PwC",
   },
   {
     index: "02",
@@ -39,17 +39,6 @@ export const focusAreas = [
 ];
 
 export const experiences = [
-  {
-    company: "Qualified Health",
-    logoText: "QH",
-    logoColor: "#0f766e",
-    link: "https://www.qualifiedhealthai.com/",
-    role: "Product Manager",
-    dates: "Jul 2026 - Present",
-    achievement:
-      "Product for enterprise generative AI in health systems — building the governance, monitoring, and deployment infrastructure that lets hospitals put genAI to work safely at scale.",
-    tech: ["Product Strategy", "GenAI Governance", "Health Systems"],
-  },
   {
     company: "Rigel Pharmaceuticals",
     logoText: "Rigel",

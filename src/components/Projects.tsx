@@ -105,31 +105,19 @@ export default function Projects() {
   return (
     <section id="projects" className="py-20 px-6">
       <div className="max-w-5xl mx-auto">
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-mono text-[11px] tracking-[0.2em] text-[var(--accent)] text-center mb-3"
+          className="flex items-baseline justify-between gap-4 border-b border-[var(--navy)]/20 pb-3 mb-10"
         >
-          03 — LAB BENCH
-        </motion.p>
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-semibold text-[var(--navy)] text-center mb-3 tracking-tight"
-        >
-          Projects
-        </motion.h2>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.1 }}
-          className="text-[var(--ink-muted)] text-center mb-14"
-        >
-          Small builds and demos — some live, some prototypes worth a look
-        </motion.p>
+          <h2 className="font-display text-3xl md:text-4xl font-semibold text-[var(--navy)] tracking-tight">
+            Projects
+          </h2>
+          <span className="hidden sm:block font-mono text-xs text-[var(--ink-muted)] whitespace-nowrap">
+            small builds &amp; demos
+          </span>
+        </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {technicalProjects.map((project: Project, index: number) => (
@@ -139,13 +127,13 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.08 }}
-              className="group flex flex-col rounded-2xl border border-[var(--card-border)] bg-white overflow-hidden hover:border-[var(--accent)] hover:shadow-[0_12px_40px_rgba(15,118,110,0.1)] hover:-translate-y-1 transition-all duration-300"
+              className="group flex flex-col rounded-lg border border-[var(--card-border)] bg-white overflow-hidden hover:shadow-[0_10px_32px_rgba(18,58,82,0.1)] transition-shadow duration-300"
             >
               <Thumbnail project={project} />
 
               <div className="flex flex-col flex-1 p-5">
                 <div className="flex items-start justify-between gap-3 mb-2">
-                  <h3 className="text-lg font-semibold text-[var(--navy)]">
+                  <h3 className="font-display text-lg font-semibold text-[var(--navy)]">
                     {project.title}
                   </h3>
                 </div>
@@ -154,16 +142,9 @@ export default function Projects() {
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-2.5 py-1 bg-[var(--accent-wash)] text-[var(--accent)] rounded-full font-mono text-[11px] tracking-wide"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+                <p className="font-mono text-[11px] text-[var(--ink-muted)] mb-4">
+                  {project.tags.join(" · ")}
+                </p>
 
                 <div className="flex items-center gap-4 border-t border-[var(--card-border)] pt-3">
                   {project.demo && (

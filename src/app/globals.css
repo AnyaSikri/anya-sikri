@@ -30,6 +30,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Display face: serif, from the world of clinical publishing */
+.font-display {
+  font-family: "Source Serif 4 Variable", Georgia, serif;
+  font-optical-sizing: auto;
+}
+
 body {
   background-color: var(--background);
   /* Faint graph-paper grid, like clinical chart paper */

@@ -6,125 +6,104 @@ import { experiences } from "@/data/content";
 
 export default function Resume() {
   return (
-    <section id="resume" className="py-20 px-6">
+    <section
+      id="resume"
+      className="py-20 px-6 bg-white border-y border-[var(--card-border)]"
+    >
       <div className="max-w-5xl mx-auto">
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-mono text-[11px] tracking-[0.2em] text-[var(--accent)] text-center mb-3"
+          className="flex items-baseline justify-between gap-4 border-b border-[var(--navy)]/20 pb-3 mb-2"
         >
-          02 — CASE HISTORY
-        </motion.p>
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-semibold text-[var(--navy)] text-center mb-14 tracking-tight"
-        >
-          Experience
-        </motion.h2>
+          <h2 className="font-display text-3xl md:text-4xl font-semibold text-[var(--navy)] tracking-tight">
+            Experience
+          </h2>
+          <span className="font-mono text-xs text-[var(--ink-muted)] whitespace-nowrap">
+            2023 — present
+          </span>
+        </motion.div>
 
-        {/* Timeline */}
-        <div className="relative pl-6 md:pl-8">
-          <div className="absolute left-[5px] md:left-[7px] top-2 bottom-2 w-px bg-[var(--card-border)]" />
-
-          <div className="space-y-6">
-            {experiences.map((exp, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3 }}
-                className="relative"
+        <div>
+          {experiences.map((exp, index) => (
+            <motion.article
+              key={index}
+              initial={{ opacity: 0, y: 14 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.35 }}
+              className="group grid grid-cols-[auto_1fr] md:grid-cols-[auto_1fr_auto] gap-x-5 gap-y-1 py-7 border-b border-[var(--card-border)] last:border-b-0"
+            >
+              {/* Logo */}
+              <div
+                className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden border border-[var(--card-border)] bg-white row-span-3"
+                style={
+                  !exp.logo
+                    ? { backgroundColor: exp.logoColor || "var(--navy)" }
+                    : {}
+                }
               >
-                {/* Timeline node */}
-                <span className="absolute -left-6 md:-left-8 top-8 flex h-[11px] w-[11px] items-center justify-center">
-                  <span className="h-[11px] w-[11px] rounded-full border-2 border-[var(--accent)] bg-white" />
-                </span>
+                {exp.logo ? (
+                  <img
+                    src={exp.logo}
+                    alt={`${exp.company} logo`}
+                    className="w-full h-full object-contain p-1.5"
+                  />
+                ) : (
+                  <span className="text-white font-bold text-[10px]">
+                    {exp.logoText}
+                  </span>
+                )}
+              </div>
 
-                <div className="group bg-white border border-[var(--card-border)] rounded-2xl p-6 hover:border-[var(--accent)] hover:shadow-[0_12px_40px_rgba(15,118,110,0.08)] transition-all duration-300">
-                  <div className="flex flex-col md:flex-row md:items-start gap-5">
-                    {/* Company Logo */}
-                    <div
-                      className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 overflow-hidden border border-[var(--card-border)] bg-white"
-                      style={
-                        !exp.logo
-                          ? { backgroundColor: exp.logoColor || "var(--navy)" }
-                          : {}
-                      }
+              <div>
+                <h3 className="font-display text-lg font-semibold text-[var(--navy)] leading-snug">
+                  {exp.role}
+                  <span className="text-[var(--ink-muted)] font-normal"> · </span>
+                  {exp.link ? (
+                    <a
+                      href={exp.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[var(--accent)] hover:underline underline-offset-4"
                     >
-                      {exp.logo ? (
-                        <img
-                          src={exp.logo}
-                          alt={`${exp.company} logo`}
-                          className="w-full h-full object-contain p-2"
-                        />
-                      ) : (
-                        <span className="text-white font-bold text-xs">
-                          {exp.logoText}
-                        </span>
-                      )}
-                    </div>
+                      {exp.company}
+                    </a>
+                  ) : (
+                    <span className="text-[var(--accent)]">{exp.company}</span>
+                  )}
+                </h3>
+              </div>
 
-                    <div className="flex-1">
-                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
-                        <h3 className="text-lg font-semibold text-[var(--navy)]">
-                          {exp.role}
-                        </h3>
-                        <span className="font-mono text-xs text-[var(--ink-muted)]">
-                          {exp.dates}
-                        </span>
-                      </div>
-                      {exp.link ? (
-                        <a
-                          href={exp.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-[var(--accent)] text-sm font-medium mb-3 hover:underline underline-offset-4 inline-block"
-                        >
-                          {exp.company}
-                        </a>
-                      ) : (
-                        <p className="text-[var(--accent)] text-sm font-medium mb-3">
-                          {exp.company}
-                        </p>
-                      )}
-                      <p className="text-sm text-[var(--ink-soft)] leading-relaxed mb-4">
-                        {exp.achievement}
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        {exp.tech.map((tech, techIndex) => (
-                          <span
-                            key={techIndex}
-                            className="px-3 py-1 bg-[var(--accent-wash)] text-[var(--accent)] rounded-full font-mono text-[11px] tracking-wide"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+              <span className="font-mono text-xs text-[var(--ink-muted)] md:text-right whitespace-nowrap col-start-2 md:col-start-3 row-start-2 md:row-start-1">
+                {exp.dates}
+              </span>
+
+              <p className="col-start-2 md:col-span-2 text-sm text-[var(--ink-soft)] leading-relaxed max-w-3xl">
+                {exp.achievement}
+              </p>
+
+              <p className="col-start-2 md:col-span-2 font-mono text-[11px] text-[var(--ink-muted)] mt-1">
+                {exp.tech.join(" · ")}
+              </p>
+            </motion.article>
+          ))}
         </div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mt-12 text-center"
+          className="mt-10"
         >
           <a
             href="/resume.pdf"
             download
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--navy)] text-white rounded-full text-sm font-medium hover:bg-[var(--accent)] transition-colors shadow-sm"
+            className="inline-flex items-center gap-2 text-sm font-medium text-[var(--navy)] underline underline-offset-4 decoration-[var(--card-border)] hover:text-[var(--accent)] hover:decoration-[var(--accent)] transition-colors"
           >
-            <Download size={16} />
-            Download Full Resume
+            <Download size={15} />
+            Download the full resume
           </a>
         </motion.div>
       </div>

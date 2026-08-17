@@ -16,47 +16,50 @@ const socials = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 px-6">
-      <div className="max-w-3xl mx-auto">
+    <section
+      id="contact"
+      className="mt-8 px-6 py-20 bg-[var(--navy)] text-white"
+    >
+      <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-3xl border border-[var(--card-border)] bg-white shadow-[0_8px_30px_rgba(18,58,82,0.06)] px-8 py-12 md:px-14 text-center"
+          className="grid md:grid-cols-[1.4fr_1fr] gap-10 items-center"
         >
-          <p className="font-mono text-[11px] tracking-[0.2em] text-[var(--accent)] mb-3">
-            05 — GET IN TOUCH
-          </p>
-          <h2 className="text-3xl md:text-4xl font-semibold text-[var(--navy)] mb-4 tracking-tight">
-            Let&apos;s Connect
-          </h2>
-          <p className="text-[var(--ink-soft)] mb-8">
-            Always open to interesting conversations and opportunities.
-          </p>
-
-          <div className="flex flex-wrap justify-center items-center gap-4 mb-8">
-            <a
-              href="mailto:sikrianya@gmail.com"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--accent)] text-white rounded-full text-sm font-medium hover:bg-[#0d635c] transition-colors shadow-sm"
-            >
-              <Mail size={16} />
-              Say hello
-            </a>
-            {socials.map(({ href, label, icon: Icon }) => (
+          <div>
+            <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight mb-4">
+              Let&apos;s talk.
+            </h2>
+            <p className="text-white/70 mb-8 max-w-md leading-relaxed">
+              Always open to interesting conversations and opportunities in
+              healthcare, biotech, and AI.
+            </p>
+            <div className="flex flex-wrap items-center gap-5">
               <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={label}
-                className="w-11 h-11 border border-[var(--card-border)] bg-white rounded-full flex items-center justify-center text-[var(--ink-muted)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-colors"
+                href="mailto:sikrianya@gmail.com"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-[var(--navy)] text-sm font-semibold hover:bg-[#d8efe9] transition-colors"
               >
-                <Icon size={18} />
+                <Mail size={16} />
+                sikrianya@gmail.com
               </a>
-            ))}
+              {socials.map(({ href, label, icon: Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="text-white/60 hover:text-white transition-colors"
+                >
+                  <Icon size={20} />
+                </a>
+              ))}
+            </div>
           </div>
-
-          <Ekg className="w-48 h-8 mx-auto opacity-70" />
+          <div className="hidden md:block">
+            <Ekg className="w-full h-16 opacity-80" />
+          </div>
         </motion.div>
 
         <motion.p
@@ -64,9 +67,9 @@ export default function Contact() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="mt-10 text-center font-mono text-[11px] tracking-[0.15em] text-[var(--ink-muted)]"
+          className="mt-16 pt-6 border-t border-white/15 font-mono text-[11px] text-white/40"
         >
-          BUILT WITH NEXT.JS · TAILWIND · FRAMER MOTION
+          anya sikri · built with next.js, tailwind &amp; framer motion
         </motion.p>
       </div>
     </section>
