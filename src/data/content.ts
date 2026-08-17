@@ -117,6 +117,16 @@ export const technicalProjects = [
     demo: "/sae-demo",
   },
   {
+    title: "Athena — Regulatory Dashboard",
+    description:
+      "Regulatory intelligence for a biotech portfolio on one screen: submission states, a catalyst runway timeline, and program-level regulatory events. Built on an invented portfolio.",
+    tags: ["React", "Regulatory Ops", "Data Viz"],
+    status: "live",
+    note: "Synthetic portfolio",
+    image: "/images/projects/athena.png",
+    demo: "/athena-demo",
+  },
+  {
     title: "Drug Script Analysis Tool",
     description:
       "Prescription trend analyzer that compares Week-over-Week and Z-Score methods side-by-side, with drug-maturity-aware thresholds and holiday-adjusted baselines. Ships as a Streamlit web app, CLI, and Colab notebook with interactive Plotly dashboards.",
