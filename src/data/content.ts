@@ -117,14 +117,14 @@ export const technicalProjects = [
     demo: "/sae-demo",
   },
   {
-    title: "Athena — Regulatory Dashboard",
+    title: "Regulatory Intelligence Dashboard",
     description:
       "Regulatory intelligence for a biotech portfolio on one screen: submission states, a catalyst runway timeline, and program-level regulatory events. Built on an invented portfolio.",
     tags: ["React", "Regulatory Ops", "Data Viz"],
     status: "live",
     note: "Synthetic portfolio",
-    image: "/images/projects/athena.png",
-    demo: "/athena-demo",
+    image: "/images/projects/regulatory-dashboard.png",
+    demo: "/regulatory-demo",
   },
   {
     title: "Drug Script Analysis Tool",

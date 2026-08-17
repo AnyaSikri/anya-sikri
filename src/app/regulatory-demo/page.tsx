@@ -48,7 +48,7 @@ function StatusChip({ status }: { status: Program["status"] }) {
   );
 }
 
-export default function AthenaDemoPage() {
+export default function RegulatoryDemoPage() {
   const [selectedCode, setSelectedCode] = useState(programs[0].code);
   const selected = useMemo(
     () => programs.find((p) => p.code === selectedCode) ?? programs[0],
@@ -105,9 +105,9 @@ export default function AthenaDemoPage() {
           className="mb-8"
         >
           <h1 className="font-display text-4xl font-semibold tracking-tight">
-            Athena
+            Regulatory Intelligence
             <span className="text-[#5c6b7c] font-normal text-2xl ml-3 align-middle">
-              regulatory intelligence
+              portfolio dashboard
             </span>
           </h1>
           <p className="text-[#5c6b7c] mt-1 max-w-2xl text-sm leading-relaxed">

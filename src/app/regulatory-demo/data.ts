@@ -1,7 +1,7 @@
 // ========================================
-// ATHENA DEMO — 100% SYNTHETIC DATA
+// REGULATORY DASHBOARD DEMO — 100% SYNTHETIC DATA
 // Invented portfolio, program codes, dates, and events for a demo
-// biotech ("Athena Bio"). No real drugs, companies, or filings.
+// biotech. No real drugs, companies, or filings.
 // ========================================
 
 export type ProgramStatus = "on-track" | "watch" | "at-risk";
@@ -43,7 +43,7 @@ export const statusMeta: Record<
 
 export const programs: Program[] = [
   {
-    code: "ATH-101",
+    code: "RD-101",
     indication: "Rheumatoid arthritis",
     modality: "Oral small molecule",
     phase: "Phase 3",
@@ -64,7 +64,7 @@ export const programs: Program[] = [
     ],
   },
   {
-    code: "ATH-207",
+    code: "RD-207",
     indication: "IgA nephropathy",
     modality: "Targeted biologic",
     phase: "Phase 2b",
@@ -84,7 +84,7 @@ export const programs: Program[] = [
     ],
   },
   {
-    code: "ATH-330",
+    code: "RD-330",
     indication: "Moderate-to-severe psoriasis",
     modality: "IL-targeted biologic",
     phase: "Phase 3",
@@ -103,7 +103,7 @@ export const programs: Program[] = [
     ],
   },
   {
-    code: "ATH-042",
+    code: "RD-042",
     indication: "Chronic heart failure (label expansion)",
     modality: "Approved small molecule",
     phase: "Marketed",
@@ -124,7 +124,7 @@ export const programs: Program[] = [
     ],
   },
   {
-    code: "ATH-114",
+    code: "RD-114",
     indication: "Acute myeloid leukemia",
     modality: "Menin inhibitor",
     phase: "Phase 1",
@@ -142,7 +142,7 @@ export const programs: Program[] = [
     ],
   },
   {
-    code: "ATH-518",
+    code: "RD-518",
     indication: "Friedreich's ataxia",
     modality: "Gene therapy",
     phase: "Phase 3",
