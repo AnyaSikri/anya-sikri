@@ -131,9 +131,11 @@ export const technicalProjects = [
     description:
       "Prescription trend analyzer that compares Week-over-Week and Z-Score methods side-by-side, with drug-maturity-aware thresholds and holiday-adjusted baselines. Ships as a Streamlit web app, CLI, and Colab notebook with interactive Plotly dashboards.",
     tags: ["Python", "Streamlit", "Plotly", "Pandas"],
-    status: "prototype",
+    status: "live",
+    note: "Synthetic data",
     github: "https://github.com/AnyaSikri/ishara-demo",
     image: "/images/projects/drug-script.png",
+    demo: "/drug-script-demo",
   },
   {
     title: "AI News Scraper",
