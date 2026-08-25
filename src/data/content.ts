@@ -137,14 +137,6 @@ export const technicalProjects = [
     image: "/images/projects/drug-script.png",
     demo: "/drug-script-demo",
   },
-  {
-    title: "AI News Scraper",
-    description:
-      "Automated web scraper that aggregates and summarizes tech news using NLP",
-    tags: ["Python", "BeautifulSoup", "OpenAI API"],
-    status: "code",
-    github: "https://github.com/anyasikri/ai-news-scraper",
-  },
 ];
 
 export const clubs = [
